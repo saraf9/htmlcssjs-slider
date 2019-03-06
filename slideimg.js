@@ -30,7 +30,7 @@ function rightClick(){
 
   nextPic.addClass("active");
   myDots();
-  clickDot();
+  
 }
 
 function myDots(){
@@ -59,13 +59,15 @@ function clickDot(){
   var me = $(this);
   var meIndex = me.index()
 
-  // var activePic = $("img.active");
-  // activePic.removeClass("active");
-  //
-  // var pics = $(".picture-container > img");
-  // var nextPic = pics.eq(meIndex);
-  //
-  // nextPic.addClass("active")
+  var activePic = $("img.active");
+  activePic.removeClass("active");
+
+  var pics = $(".picture-container > img");
+  var nextPic = pics.eq(meIndex);
+
+  nextPic.addClass("active")
+
+
 }
 
 function init (){
@@ -76,6 +78,7 @@ function init (){
 
   leftPart.click(leftClick);
   rightPart.click(rightClick);
+  dots.click(clickDot);
 }
 
 
