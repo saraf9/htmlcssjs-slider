@@ -30,7 +30,7 @@ function rightClick(){
 
   nextPic.addClass("active");
   myDots();
-  
+
 }
 
 function myDots(){
@@ -56,16 +56,19 @@ function myDots(){
 
 // Ora bisogna solo associare i pallini con la relativa immagine.
 function clickDot(){
+  // Prima di tutto tramite this e me associo l'indice che mi ero già calcolato con i pallini corrispondenti
   var me = $(this);
   var meIndex = me.index()
-
+// Associo l'immagine levando la classe active
   var activePic = $("img.active");
   activePic.removeClass("active");
 
   var pics = $(".picture-container > img");
   var nextPic = pics.eq(meIndex);
+  //Associo il pallino richiamndo la funzione e mettendo la nextpic
+  nextPic.addClass("active");
+  myDots();
 
-  nextPic.addClass("active")
 
 
 }
