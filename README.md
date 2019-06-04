@@ -9,12 +9,12 @@ Tecnologie usate: HTML, CSS, JS, JQuery.
 
 <hr></hr>
 
-![](scrsl.png) 
+![](scr_sl.png) 
 
 <hr></hr>
 
-![](scrsl_1.png) 
+![](scr_sl1.png) 
 
 <hr></hr>
 
-![](scrsl_2.png) 
+![](scr_sl2.png) 
